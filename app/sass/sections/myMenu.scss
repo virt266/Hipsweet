@@ -1,0 +1,30 @@
+#myMenu{
+	position: fixed;
+	top: 200px;
+	right: 10px;
+	z-index: 999;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+.myMenu-item.active .myMenu-item-link{
+	color: $white;
+	background: rgba(#2b2f5f, .9);
+}
+.myMenu-item-link{
+	display: block;
+	text-decoration: none;
+	font-size: 0.9em;
+	color:#353535;
+	background-color: rgba(#ccc, .8);
+	padding: 10px;
+	margin: 5px;
+	@include border-radius(10px);
+	@include box-shadow(1px 1px 3px #444);
+	transition: all .3s;
+
+	&:hover{
+		background-color: rgba($black, .6);
+		color: $white;
+	}
+}

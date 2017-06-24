@@ -1,0 +1,84 @@
+footer {
+	background: #ccc;
+	@extend %clearfix;
+	padding: rem(10px) 0;
+}
+.footer__left{
+	float: left;
+
+	@include phones{
+		float: none;
+		text-align: center;
+	}
+}
+
+.footer__right{
+	float: right;
+
+	@include phones{
+		float: none;
+		text-align: center;
+	}
+}
+.copyright{
+	@include malina;
+	color: #9c9c9c;
+	font-size: 14px;
+	line-height: 40px;
+
+}
+.socials__link {
+	width: rem(32px);
+	height: rem(32px);
+	@include inlineblock(middle);
+	background: #8b8b8b;
+	border-radius: 50%;
+	text-align: center;
+
+	&:hover{
+		background: #598db2;
+	}
+}
+.fa-facebook{
+	color: #ccc;
+}
+.socials__item{
+	padding-left: rem(5px);
+	@include inlineblock (middle);
+}
+.socials__link_vk, .socials__link_fb, .socials__link_tw{
+	
+	&:before{
+		font-family: 'FontAwesome';
+		color: #ccc;
+		@include inlineblock (middle);
+		padding-top: rem(4px);
+	}
+}
+.socials__link_vk{
+	
+	&:before{
+		content: "\f189";
+	}
+}
+.socials__link_fb{
+		
+	&:before{
+		content: "\f09a";
+	}
+}
+.socials__link_tw{
+		
+	&:before{
+		content: "\f099";
+	}
+}
+//@each $social in (vk, fb, tw) {
+//	.socials__link_#{$social} {
+//		background: url('../img/icons/#{$social}.png') 0 0 no-repeat;
+//		
+//		&:hover {
+//			background: url('../img/icons/#{$social}.png') 0 0 no-repeat;
+//		}
+//	}
+//}

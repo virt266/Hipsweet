@@ -1,0 +1,69 @@
+.sidebar{
+	width: rem(220px);
+	float: left;
+
+	@include tablets {
+		width: 100%;
+		float: none;
+		margin-bottom: rem(35px);
+	}
+	@include phones {
+		width: 100%;
+	}
+
+}
+.nav__item{
+	@include tablets {
+		@include inlineblock(middle);
+		text-align: center;
+	}
+}
+.nav__list{
+	@include tablets {
+		text-align: left;
+	}
+
+	@include phones {
+		text-align: left;
+	}
+}
+.nav__link{
+	display: block;
+	@include malina;
+	font-size: rem(18px);
+	line-height: rem(24px);
+	padding: rem(10px) rem(24px) rem(9px) 0;
+	text-align: right;
+	text-decoration: none;
+	border-right: rem(6px) solid transparent;
+	
+	@include phones{
+		padding: rem(10px) rem(7px) rem(9px) 0;
+	}
+	&:hover{
+
+
+		@include tablets {
+			border-color: transparent;
+		}
+		@include phones {
+			.fa-graduation-cap{
+				display: none;
+			}
+		}
+	}
+}
+@include phones {
+	.fa-rocket, .fa-graduation-cap, .fa-briefcase{
+		display: none;
+	}
+}
+.fa{
+	padding-right: rem(10px);
+}
+.active{
+
+	@include tablets {
+		border-color: transparent;
+	}
+}

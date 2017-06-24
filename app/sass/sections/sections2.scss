@@ -1,0 +1,96 @@
+.section2{
+	@extend %clearfix;
+	padding: 50px 0 115px 72px;
+	//background: url('../../assets/img/section2/secton2.jpg') top center no-repeat;
+	//background: #cacaca;
+}
+.section2-left{
+	width: 610px;
+	padding-top: 50px;
+	float: left;
+}
+
+.section2-title{
+	@include malina;
+	color: #2b2f5f;
+	font-size: 62px;
+	line-height: 1.2;
+	margin-bottom: 33px;
+}
+.section2-text{
+	padding-right: 200px;
+	margin-bottom: 66px;
+}
+.section2-text p{
+	font-family: arial, verdana, sans-serif;
+	font-weight: normal;
+	color: $lightgrey;
+	font-size: 15px;
+	line-height: 22px;
+}
+// .sections2-list{
+// 	font-size: 0;
+// }
+
+.list-item{
+	width: 160px;
+	margin-left: 3px;
+	margin-right: 43px;
+	@include inlineblock(middle);
+	outline: 1px solid #fff;
+	font-size: 16px;
+	position: relative;
+
+	&:last-child{
+		margin-right: 0;
+	}
+}
+.list-item-link{
+	display: block;
+	width: 90px;
+	height: 90px;
+	@include border-radius(50%);
+	background-color: rgba(#2b2f5f, .2);
+	cursor: pointer;
+	margin-bottom: 32px;
+}
+
+.list-item-link-cap{
+	position: absolute;
+	top: -10px;
+	left: -10px;
+	width: 110px;
+	height: 100px;
+	background: url(../../assets/img/section2/cap.png) 0 0 no-repeat;
+	}
+.list-item-link-leaves{
+	position: absolute;
+	top: 0;
+	left: -33px;
+	width: 130px;
+	height: 100px;
+	background: url(../../assets/img/section2/leaves.png) 0 0 no-repeat;
+}
+.list-item-link-heart{
+	position: absolute;
+	top: -5px;
+	left: -18px;
+	width: 110px;
+	height: 100px;
+	background: url(../../assets/img/section2/heart.png) 0 0 no-repeat;
+}
+
+.list-item-link-disk{
+	@include malina;
+	font-weight: bold;
+	color: $lightgrey;
+	font-size: 16px;
+}
+.section2-right{
+	width: 412px;
+	float: right;
+}
+.section2-pic{
+	max-width: 100%;
+	max-height: 100%;
+}

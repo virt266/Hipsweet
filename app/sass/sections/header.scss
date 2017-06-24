@@ -1,0 +1,163 @@
+.header {
+	background: $red;
+	@extend %clearfix;
+	font-family: Arial, 'sans-serif';
+	padding-top: 25px;
+}
+
+.header-left{
+	float: left;
+	width: 290px;
+	margin-right: 70px;
+	margin-left: 25px;
+}
+.header-left-img{
+	max-width: 100%;
+    max-height: 100%;
+}
+
+.header-center{
+	float: left;
+	width: 565px;
+}
+.nav-list{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	font-size: 0;
+}
+.nav-item{
+	@include inlineblock(middle);
+	letter-spacing: 1px;
+	font-size: rem(16px);
+	position: relative;
+
+	&:hover{
+		.dropdown{
+			left: 50%;
+			opacity: 1;
+		}
+	}
+}
+
+.nav-link{
+	font-family: arial;
+	color: $white;
+	text-decoration: none;
+	display: block;
+	padding: 26px 30px;
+	transition: 0.5s;
+
+		&::before{
+		content: "";
+		width: 5px;
+		height: 5px;
+		position: absolute;
+		top:30px;
+		right: 8px;
+		border:1px solid;
+		border-color: transparent transparent $white $white; 
+		transform: rotate(-45deg);
+	}
+
+	&:hover:before{
+				border-color: transparent transparent #F99F0B #F99F0B; 
+				transform: rotate(135deg);
+
+	}
+	&:hover{
+		color: #F99F0B;
+	}
+}
+.dropdown{
+	position: absolute;
+	top: 100%;
+	left: -9999px;
+	margin-left: -113px;
+	background: rgba(#fff, 0.9);
+	@include border-radius(10px);
+	width: 226px;
+	text-align: center;
+	z-index: 1000;
+	opacity: 0;
+	transition: opacity .5s;
+
+
+		&:before{
+		display: block;
+		content: "";
+		position: absolute;
+		left: 0;
+		right: 0;
+		height: 25px;
+		top: -20px;
+	}
+
+		&:after{
+		content: "";
+		position: absolute;
+		right: 50%;
+		top: -10px;
+		margin-right: -10px;
+		border: 10px solid;
+		border-color: #fff #fff transparent transparent;
+		transform: rotate(-45deg);
+		opacity: 0.9;
+	}
+
+
+}
+.dropdown-item{
+	position: relative;
+
+&:hover:before{
+	content: "";
+	position: absolute;
+	right: 98%;
+  top: 30%;
+	border: 5px solid;
+	border-color: transparent #eca05e #eca05e transparent; 
+	transform: rotate(-45deg);
+}
+
+	&:hover{
+		font-weight: bold;
+	}
+
+}
+.dropdown-item-link{
+	display: block;
+	text-decoration: none;
+	padding: 5px 0;
+	color: $black;
+}
+
+.header-right {
+	float: right;
+	width: 119px;
+	padding-top: 15px;
+}
+.header-right-socials-item{
+	 @include inlineblock(middle)
+
+	 &:last-child{
+		margin: 40px;
+	}
+}
+.header-right-socials-item-link{
+	display: inline-block;
+	text-align: center;
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
+	background: rgba(#000, 0.5);
+	color: $white;
+
+	&:before{
+    font-family: 'FontAwesome';
+    color: $white;
+    font-size: 18px;
+    @include inlineblock(middle)
+    padding-top: 7px;
+	}
+}
