@@ -4,3 +4,4 @@
 // 	slidesNavigation: true,
 // 	slidesNavPosition: 'bottom',
 // });
+$(".main").onepage_scroll();
