@@ -1,11 +1,11 @@
-.section3{
+.page3{
 	@extend %clearfix;
 	padding: 95px 0 115px 0;
-	background: url('../../assets/img/section3/section3.jpg') top center no-repeat;
+	background: url('../../assets/img/page3/section3.jpg') top center no-repeat;
 	//background: #ffb212;
 }
 
-.section3-title{
+.page3-title{
 	@include malina;
 	color: #393939;
 	font-size: 62px;
@@ -14,21 +14,21 @@
 	text-align: center;
 
 }
-.section3-text{
+.page3-text{
 	font-family: arial;
 	margin: 0 160px 22px 160px;
 	font-size: 15px;
 	font-weight: normal;
 	color: #ab594a;
 }
-.section3-list{
+.page3-list{
 	font-size: 0;
 }
-.section3-list-item{
+.page3-list-item{
 	@include inlineblock(middle);
 	width: 24%;
 }
-.section3-list-item-link{
+.page3-list-item-link{
     display: block;
     padding: 0 10px;
     text-decoration: none;

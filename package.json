@@ -6,7 +6,8 @@
   "dependencies": {
     "bower": "^1.8.0",
     "del": "^3.0.0",
-    "gulp": "^3.9.1"
+    "gulp": "^3.9.1",
+    "wiredep": "^4.0.0"
   },
   "devDependencies": {
     "autoprefixer": "^7.1.1",

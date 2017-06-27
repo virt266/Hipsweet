@@ -1,11 +1,11 @@
-.header {
+.page1-header {
 	background: $red;
 	@extend %clearfix;
 	font-family: Arial, 'sans-serif';
 	padding-top: 25px;
 }
 
-.header-left{
+.page1-header-left{
 	float: left;
 	width: 290px;
 	margin-right: 70px;
@@ -132,7 +132,7 @@
 	color: $black;
 }
 
-.header-right {
+.page1-header-right {
 	float: right;
 	width: 119px;
 	padding-top: 15px;
