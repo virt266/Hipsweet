@@ -14,6 +14,7 @@
 	<!-- build:css css/vendor.min.css -->
     <!-- bower:css -->
     <link rel="stylesheet" href="bower/fullpage.js/dist/jquery.fullpage.css" />
+    <link rel="stylesheet" href="bower/normalize-css/normalize.css" />
     <!-- endbower -->
     <!-- endbuild -->
 	<link rel="stylesheet" href="css/styles.min.css">
@@ -23,7 +24,7 @@
 	<!--[if lt IE 9]>
 		<h1>Я виден только в ИЕ 8 и меньше</h1>
 	<![endif]-->
-	<ul id="myMenu">
+	<!-- <ul id="myMenu">
 		<li class="myMenu-item" data-menuanchor="sections1" class="active"><a href="#sections1" class="myMenu-item-link">section1</a></li>
 		<li class="myMenu-item" data-menuanchor="sections2"><a href="#sections2" class="myMenu-item-link"> section2</a></li>
 		<li class="myMenu-item" data-menuanchor="sections3"><a href="#sections3" class="myMenu-item-link"> section3</a></li>
@@ -31,61 +32,57 @@
 		<li class="myMenu-item" data-menuanchor="sections5"><a href="#sections5" class="myMenu-item-link"> section5</a></li>
 		<li class="myMenu-item" data-menuanchor="sections6"><a href="#sections6" class="myMenu-item-link"> section6</a></li>
 		<li class="myMenu-item" data-menuanchor="sections7"><a href="#sections7" class="myMenu-item-link"> section7</a></li>
-	</ul>
+	</ul> -->
 	<div id="fullpage">
 		<div class="section">
 			<div class="wrapper">
 				<div class="container">
-					<header class="page1-header">
-						<div class="page1-header-left">
-							<a href="#" class="header-left-link">
-								<img src="assets/img/header/logo.png" alt="logo" class="header-left-img">
-							</a>
-						</div>
-						<div class="header-center">
-							<nav class="nav">
-								<ul class="nav-list">
-									<li class="nav-item">
-										<a href="#" class="nav-link">Сладость </a>
+					<div class="page1">
+						<header class="page1-header">
+							<div class="page1-header-left">
+								<a href="#" class="header-left-link">
+									<img src="assets/img/header/logo.png" alt="logo" class="header-left-img">
+								</a>
+							</div>
+							<div class="header-center">
+								<nav class="nav">
+									<ul class="nav-list">
+										<li class="nav-item">
+											<a href="#" class="nav-link">Сладость </a>
+										</li>
+										<li class="nav-item">
+											<a href="#" class="nav-link">Доставка</a>
+										</li>
+										<li class="nav-item">
+											<a href="#" class="nav-link">Компания</a>
+										</li>
+										<li class="nav-item">
+											<a href="#" class="nav-link">Команда</a>
+											<ul class="dropdown">
+												<li class="dropdown-item"><a href="#" class="dropdown-item-link">Тони Ройстер</a></li>
+												<li class="dropdown-item"><a href="#" class="dropdown-item-link">Ричард Джейс</a></li>
+												<li class="dropdown-item"><a href="#" class="dropdown-item-link">Марти Модстер</a></li>
+												<li class="dropdown-item"><a href="#" class="dropdown-item-link">Тони Ройстер</a></li>
+												<li class="dropdown-item"><a href="#" class="dropdown-item-link">Ричард Джейс</a></li>
+												<li class="dropdown-item"><a href="#" class="dropdown-item-link">Марти Модстер</a></li>
+												<li class="dropdown-item"><a href="#" class="dropdown-item-link">Тони Ройстер</a></li>
+											</ul>
+										</li>
+									</ul>
+								</nav>
+							</div>
+							<div class="page1-header-right">
+								<ul class="header-right-socials">
+									<li class="header-right-socials-item">
+										<a href="#" class="header-right-socials-item-link fa-user-o"></a>
 									</li>
-									<li class="nav-item">
-										<a href="#" class="nav-link">Доставка</a>
-									</li>
-									<li class="nav-item">
-										<a href="#" class="nav-link">Компания</a>
-									</li>
-									<li class="nav-item">
-										<a href="#" class="nav-link">Команда</a>
-										<ul class="dropdown">
-											<li class="dropdown-item"><a href="#" class="dropdown-item-link">Тони Ройстер</a></li>
-											<li class="dropdown-item"><a href="#" class="dropdown-item-link">Ричард Джейс</a></li>
-											<li class="dropdown-item"><a href="#" class="dropdown-item-link">Марти Модстер</a></li>
-											<li class="dropdown-item"><a href="#" class="dropdown-item-link">Тони Ройстер</a></li>
-											<li class="dropdown-item"><a href="#" class="dropdown-item-link">Ричард Джейс</a></li>
-											<li class="dropdown-item"><a href="#" class="dropdown-item-link">Марти Модстер</a></li>
-											<li class="dropdown-item"><a href="#" class="dropdown-item-link">Тони Ройстер</a></li>
-										</ul>
+									<li class="header-right-socials-item">
+										<a href="#" class="header-right-socials-item-link fa-search fa-flip-horizontal"></a>
 									</li>
 								</ul>
-							</nav>
-						</div>
-						<div class="page1-header-right">
-							<ul class="header-right-socials">
-								<li class="header-right-socials-item">
-									<a href="#" class="header-right-socials-item-link fa-user-o"></a>
-								</li>
-								<li class="header-right-socials-item">
-									<a href="#" class="header-right-socials-item-link fa-search fa-flip-horizontal"></a>
-								</li>
-							</ul>
-						</div>
-					</header>
-	<!-- 				<div class="slider-header">
-						<div class="slide slide1" data-anchor="slide1"> Slide 1 </div>
-						<div class="slide slide2" data-anchor="slide2"> Slide 2 </div>
-						<div class="slide slide3" data-anchor="slide3"> Slide 3 </div>
-						<div class="slide slide4" data-anchor="slide4"> Slide 4 </div>
-					</div> -->
+							</div>
+						</header>
+					</div>
 				</div>
 			</div>
 		</div>
@@ -116,9 +113,9 @@
 							</ul>
 						</div>
 						<div class="page2-right">
-								<div class="page2-img">
-									<img src="assets/img/page2/cook.png" alt="cook" class="page2-pic">
-								</div>
+							<div class="page2-img">
+								<img src="assets/img/page2/cook.png" alt="cook" class="page2-img-pic">
+							</div>
 						</div>
 					</div>
 				</div>
@@ -131,6 +128,62 @@
 					<div class="page3-title">Мы поставляем</div>
 					<div class="page3-text">Также мы делаем выпечку под заказ для различных праздников и банкетов. Заказать индивидуальную выпечку вы можете заполнив <a href="#" class="page3-text-link">форму</a>. После с Вами свяжется один из наших поваров и обсудит заказ более детально.</div>
 					<ul class="page3-list">
+						<li class="page3-list-item">
+							<a href="#" class="page3-list-item-link">
+								<div class="product">
+									<div class="product-img">
+										<img src="assets/img/page3/Cakes.png" alt="" class="product-img-pic">
+									</div>
+									<div class="product-title">Торты</div>
+									<div class="product-description">
+										<p>Десерт, состоящий из одного или нескольких коржей, пропитанных кремом или джемом. Сверху торт обычно украшают кремом, глазурью или фруктами
+										</p>
+									</div>
+								</div>
+							</a>
+						</li>
+						<li class="page3-list-item">
+							<a href="#" class="page3-list-item-link">
+								<div class="product">
+									<div class="product-img">
+										<img src="assets/img/page3/liver.png" alt="">
+									</div>
+									<div class="product-title">Печенье</div>
+									<div class="product-description">
+										<p>Десерт, состоящий из одного или нескольких коржей, пропитанных кремом или джемом. Сверху торт обычно украшают кремом, глазурью или фруктами
+										</p>
+									</div>
+								</div>
+							</a>
+						</li>
+						<li class="page3-list-item">
+							<a href="#" class="page3-list-item-link">
+								<div class="product">
+									<div class="product-img">
+										<img src="assets/img/page3/donuts.png" alt="">
+									</div>
+									<div class="product-title">Пончики</div>
+									<div class="product-description">
+										<p>Десерт, состоящий из одного или нескольких коржей, пропитанных кремом или джемом. Сверху торт обычно украшают кремом, глазурью или фруктами
+										</p>
+									</div>
+								</div>
+							</a>
+						</li>
+						<li class="page3-list-item">
+							<a href="#" class="page3-list-item-link">
+								<div class="product">
+									<div class="product-img">
+										<img src="assets/img/page3/rutes.png" alt="">
+									</div>
+									<div class="product-title">Рулеты</div>
+									<div class="product-description">
+										<p>Десерт, состоящий из одного или нескольких коржей, пропитанных кремом или джемом. Сверху торт обычно украшают кремом, глазурью или фруктами
+										</p>
+									</div>
+								</div>
+							</a>
+						</li>
 						<li class="page3-list-item">
 							<a href="#" class="page3-list-item-link">
 								<div class="product">
