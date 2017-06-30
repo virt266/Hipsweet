@@ -22,10 +22,10 @@
 	color: #ab594a;
 }
 .page3-list{
-	@extend %clearfix;
+	font-size: 0;
 }
 .page3-list-item{
-	float: left;
+	@include inlineblock(top);
 	width: 25%;
 	outline: 1px solid black;
     text-align: center;
@@ -51,7 +51,7 @@
 	width: 180px;
 	height: 180px;
 	@include border-radius(50%);
-	background-color: rgba(#000, .9);
+	background-color: rgba(#000, .1);
     position: relative;
     margin-bottom: 12px;
     display: inline-block;
