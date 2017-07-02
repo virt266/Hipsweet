@@ -90,6 +90,7 @@
 	z-index: 1000;
 	opacity: 0;
 	transition: opacity .5s;
+	padding: 40px 0;
 
 
 		&:before{
@@ -121,7 +122,8 @@
 &:hover:before{
 	content: "";
 	position: absolute;
-	right: 98%;
+	right: 100%;
+	margin-right: -5px;
   	top: 30%;
 	border: 5px solid;
 	border-color: transparent #eca05e #eca05e transparent; 
@@ -136,7 +138,7 @@
 .dropdown-item-link{
 	display: block;
 	text-decoration: none;
-	padding: 5px 0;
+	padding: 5px 40px;
 	color: $black;
 }
 
@@ -153,7 +155,7 @@
 	}
 }
 .header-right-socials-item-link{
-	display: inline-block;
+	@include inlineblock(middle);
 	text-align: center;
 	width: 40px;
 	height: 40px;

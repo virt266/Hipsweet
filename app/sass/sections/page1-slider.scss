@@ -1,0 +1,178 @@
+.bx-wrapper{
+	box-shadow:none;
+	border: none;
+}
+.bxslider-slide1{
+	padding: 70px 0 124px 0;
+	background: $red;
+	@extend %clearfix;
+}
+.bxslider-slide2{
+	background: #ddd;
+	@extend %clearfix;
+}
+.bxslider-slide1-left{
+	width: 184px;
+	float: left;
+	padding: 92px 0 0 12px;
+}
+.bxslider-slide1-left-ingredient-top{
+	padding-left: 10px;
+	margin-bottom: 209px;
+}
+.bxslider-slide1-left-ingredient-top-icon{
+	width: 40px;
+	height: 40px;
+	background: rgba($white, .1);
+	border-radius: 50%;
+	margin-left: 26px;
+	margin-bottom: 18px;
+	position: relative;
+	cursor: pointer;
+
+	&:before{
+		content: "";
+		position: absolute;
+		width: 18px;
+		height: 18px;
+		top: 11px;
+		left: 11px;
+		z-index: 10;
+		background: url(/assets/img/bxslider/bxslider-slide1/Whisk.png) no-repeat;
+	}
+
+	&:hover{
+		.bxslider-slide1-left-ingredient-top-icon-list{
+			left: 100px;
+			opacity: 1;
+		}
+
+		background: #ffaf28;
+	}
+}
+.bxslider-slide1-left-ingredient-top-text{
+	font-family: Arial, Verdana, sans-serif;
+	font-weight: normal;
+	color: $white;
+	font-size: 15px;
+	line-height: 21px;
+}
+.bxslider-slide1-left-ingredient-top-icon-list{
+	width: 381px;
+	height: 345px;
+	background: rgba($white, .9);
+	border-radius: 20px;
+	position: absolute;
+	top: -80px;
+	left: -9999px;
+	z-index: 1000;
+	opacity: 0;
+	transition: opacity .5s;
+	padding: 30px;
+	
+	&:before{
+		content: "";
+   		display: block;
+	    position: absolute;
+	    top: 0;
+	    right: 100%;
+	    width: 70px;
+	    height: 100%;
+	    margin-right: -10px;
+	}
+
+	&:after{
+		content: "";
+		position: absolute;
+		right: 100%;
+		top: 23%;
+		margin-right: -20px;
+		border: 20px solid;
+		border-color: transparent transparent #fff #fff;
+		transform: rotate(45deg);
+		opacity: 0.9;
+	}
+}
+.bxslider-slide1-left-ingredient-bottom-storage{
+	font-family: Arial, Verdana, sans-serif;
+	font-weight: normal;
+	color: $white;
+	font-size: 13px;
+	line-height: 29px;
+	opacity: .3;
+	padding-left: 10px;
+}
+.bxslider-slide1-left-ingredient-bottom-storagetime p{
+	@include malina;
+	color: $white;
+	font-size: 24px;
+	line-height: 1;
+	margin-bottom: 0;
+}
+.bxslider-slide1-center{
+	width: 440px;
+	float: left;
+}
+.xslider-slide1-center-pic{
+	display: block;
+	width: 100%;
+}
+.bxslider-slide1-right{
+	width: 476px;
+	float: left;
+	padding: 36px 0 45px 72px;
+}
+.bxslider-slide1-right-title{
+	@include malina;
+	color: $white;
+	font-size: 63px;
+	line-height: 1.3;
+	margin-bottom: 24px;
+	width: 375px;
+}
+.bxslider-slide1-right-description p{
+	font-family: arial, verdana, sans-serif;
+	font-weight: normal;
+	color: $white;
+	font-size: 15px;
+	line-height: 21px;
+	margin-bottom: 28px;
+}
+
+.bxslider-slide1-right-price p {
+	@include malina;
+	color: $white;
+	font-size: 63px;
+	margin-bottom: 0;
+	@include inlineblock(middle);
+}
+.btn{
+	@include inlineblock(middle);
+	padding-left: 40px;
+}
+.bay{
+	display: block;
+	border-radius: 30px;
+	padding: 13px 20px;
+	background: #fca211;
+	font-family: arial, verdana, sans-serif;
+	font-weight: bold;
+	color: $red;
+	font-size: 14px;
+	line-height: 1;
+	text-decoration: none;
+
+	&:hover{
+		background: rgba(#fca211 , .5);
+	}
+}
+
+.bx-wrapper .bx-controls-auto, .bx-wrapper .bx-pager {
+    position: absolute;
+    bottom: 72px;
+    width: 100%;
+}
+
+.bx-wrapper .bx-pager.bx-default-pager a {
+	margin: 0px 20px;
+}

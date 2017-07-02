@@ -4,3 +4,6 @@
  // 	slidesNavigation: true,
  // 	slidesNavPosition: 'bottom',
  // });
+$(document).ready(function(){
+  $('.bxslider').bxSlider();
+});
