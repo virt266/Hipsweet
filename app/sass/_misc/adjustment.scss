@@ -39,6 +39,8 @@ body {
 	min-height: 100%;
 	overflow: hidden;
 	position: relative;
+	max-width: 1100px;
+	margin: 0 auto;
 	//min-width: $container-width + rem(20px);
 }
 
@@ -53,8 +55,8 @@ body {
 
 .container {
 	//max-width: $container-width;
-	max-width: 1100px;
-	margin: 0 auto;
+	// max-width: 1100px;
+	// margin: 0 auto;
 
 	@include desktop {
 		width: 970px;

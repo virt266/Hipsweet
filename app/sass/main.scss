@@ -13,12 +13,12 @@ $body-font : 'als_malinaregular', Helvetica, serif;
 
 
 // styles
-@import "sections/page1";
-@import "sections/page1-header";
-@import "sections/page1-slider";
-@import "sections/page1-bxslider-table";
-@import "sections/page2";
-@import "sections/page3";
+@import "sections/section1";
+@import "sections/section1-header";
+@import "sections/section1-slider";
+@import "sections/section1-bxslider-table";
+@import "sections/section2";
+@import "sections/section3";
 @import "sections/myMenu";
 
 //adaptive
