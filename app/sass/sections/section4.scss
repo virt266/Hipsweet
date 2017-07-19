@@ -1,0 +1,111 @@
+.section4{
+	padding: 83px 0 0 0;
+	background-color: #ececec;
+	min-height: 1100px;
+}
+.tabs-command-list{
+	@extend %clearfix;
+	padding-bottom: 38px;
+}
+.section4-title{
+	@include malina;
+    color: #2b2f5f;
+    font-size: 62px;
+	width: 385px;
+	float: left;
+}
+.tabs-command-item{
+	display: block;
+	width: 230px;
+	padding: 13px 20px;
+	margin-left: 12px;
+	@include border-radius(20px);
+	float: left;
+	position: relative;
+
+	&:first-child{
+		margin-left: 0;
+	}
+}
+.tabs-command-item-active{
+		background: #893213;
+
+		&:before{
+		content: "";
+		border: 10px solid;
+		border-color: transparent transparent #893213 #893213;
+		position: absolute;
+		top: 100%;
+		margin-top: -10px;
+		left: 50%;
+		margin-left: -5px;
+		transform: rotate(-45deg);
+	}
+			.command-item-name{
+				color: #ffa92b;
+			}
+			.command-item-position{
+				color: #fff;
+			}
+			
+}
+.command-item-name{
+	@include malina;
+    color: #2b2f60;
+    font-size: 30px;
+}
+
+.command-item-position{
+	font-family: arial, verdana, sans-serif;
+	font-weight: normal;
+    color: #8d8d8d;
+    font-size: 16px;
+    line-height: 30px;
+}
+.tabs-command-content{
+	@extend %clearfix;
+}
+.tabs-command-content-left{
+	float: left;
+	width: 270px;
+	margin-right: 30px;
+	margin-top: 37px;
+}
+.content-left p{	
+	font-family: arial, verdana, sans-serif;
+	font-style: italic;
+    color: #747474;
+    font-size: 14px;
+    line-height: 21px;	
+}
+.content-left p span{	
+	font-family: arial, verdana, sans-serif;
+	font-style: italic;
+    color: #747474;
+    font-size: 14px;
+    line-height: 21px;
+    font-weight: bold;	
+}
+.tabs-command-content-center{
+	float: left;
+}
+.content-center-img{
+	height: 598px;
+	width: 415px;
+}
+.content-center-img-pic{
+	display: block;
+	max-width: 100%;
+}
+.tabs-command-content-right{
+	float: right;
+	width: 340px;
+	margin-top: 37px;	
+}
+.content-right p{	
+	font-family: arial, verdana, sans-serif;
+	font-style: italic;
+    color: #747474;
+    font-size: 14px;
+    line-height: 21px;	
+}

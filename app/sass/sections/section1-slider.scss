@@ -10,7 +10,12 @@
 	@extend %clearfix;
 	position: relative;
 }
-
+.bxslider-slide2{
+	padding: 60px 0 114px 0;
+	background: #ccc;
+	@extend %clearfix;
+	position: relative;
+}
 .bxslider-slide1-title{
 	position: absolute;
     top: 220px;

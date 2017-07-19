@@ -1,21 +1,18 @@
 .section3{
-	padding: 95px 0 115px 0;
-	height: 1300px;
+	padding: 90px 0 20px 0;
 	background: url('/assets/img/section3/pattern.jpg');
-	// position: relative;
-	//background-color: #ffaf1a;
+	position: relative;
 
-	// &:before {
-	//  content:'';
-	//  width: 100%;
-	//  height: 100%;
-	//  left: 0;
-	//  top: 0;
-	//  position: absolute;
-	//  background: url('../../assets/img/section3/pattern.png');
-
+	&:before {
+	 content:'';
+	 width: 100%;
+	 height: 100%;
+	 left: 0;
+	 top: 0;
+	 position: absolute;
+	 //background-color: #ffaf1a;
+	}
 }
-
 .section3-title{
 	@include malina;
 	color: #393939;
@@ -26,10 +23,10 @@
 }
 .section3-text{
 	font-family: arial;
-	margin: 0 160px 85px 160px;
+	margin: 0 165px 55px 160px;
 	font-size: 15px;
 	font-weight: normal;
-	color: #ab594a;
+	color: #883213;
 }
 .section3-list{
 	font-size: 0;
@@ -37,7 +34,6 @@
 .section3-list-item{
 	@include inlineblock(top);
 	width: 25%;
-	outline: 1px solid black;
     text-align: center;
     padding-bottom: 10px;
     margin-bottom: 45px;
@@ -47,7 +43,7 @@
 		top: -60px;
 		left: 0;
 		display: block;
-	    max-width: 100%;
+	    max-height: 135%;
     }
 }
 .section3-list-item-link{
@@ -65,15 +61,15 @@
 	@include border-radius(50%);
 	background-color: rgba(#000, .1);
     position: relative;
-    margin-bottom: 12px;
+    margin-bottom: 7px;
     display: inline-block;
 }
 .product-img-pic{
 	position: absolute;
-	top: 0;
+	bottom: 0;
 	left: 0;
 	display: block;
-    max-width: 100%;
+    max-height: 100%;
 }
 .product-title{
 	font-size: 32px;
