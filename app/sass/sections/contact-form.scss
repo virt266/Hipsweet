@@ -4,17 +4,16 @@
 }
 .contact-form{
 	width: 843px;
-	height: 408px;
 	background: url('/assets/img/form/form-background.jpg');
-	@include border-radius(10px);	
+	@include border-radius(15px);	
 	margin-bottom: 120px;
-	@include inlineblock(middle);
+	margin-left: 120px;
 	@extend %clearfix;
 }
 .contact-form-left{
-	width: 50%;
+	width: 433px;
 	float: left;
-	padding-top: 120px;
+	padding: 110px 0 54px 0;
 }	
 .contact-form-left-text p{
 	@include malina;
@@ -24,8 +23,37 @@
 	@include inlineblock(middle);
 }
 .contact-form-right{
-	width: 50%;
+	width: 410px;
 	float: right;
-	background: rgba(#474a74, .8);
+	background: rgba(#474a74, .87);
 	min-height: 100%;
-}							
+}	
+.contact-form-date{
+	padding: 63px 85px 63px 45px;
+}
+.contact-form-date input[type="text"],
+.contact-form-date input[type="phone"]{
+	font-family: arial, verdana, sans-serif;
+	font-weight: normal;
+    color: $white;
+    font-size: 16px;
+    line-height: 22px;
+    width: 275px;
+    margin: 0;
+    margin-bottom: 15px;
+    padding: 20px 0;
+    background: none;
+    outline: none;
+    border: 0;
+    border-bottom: 2px solid $white;
+}
+.callback-checkbox{
+	font-family: arial, verdana, sans-serif;
+	font-weight: normal;
+    color: $white;
+    font-size: 16px;
+    line-height: 22px;
+    display: block;
+    text-align: left;
+    margin-top: 22px;
+}

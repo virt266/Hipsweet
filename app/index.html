@@ -394,7 +394,12 @@
 								</div>
 							</div>
 							<div class="contact-form-right">	
-								
+								<form action="contact-form" class="contact-form-date" method="post">
+									<input class="user-name" type="text" name="name" placeholder="Введите ваше Имя">
+									<input class="user-mail" type="text" name="mail" placeholder="Введите ваш Email">
+									<input class="user-phone" type="text" id="phone" name="phone" placeholder="8(___)___-__-__">
+									<label class="callback-checkbox"><input class="callback" type="checkbox" name="callback">Заказать обратный звонок</label>
+								</form>
 							</div>
 						</div>
 					</div>
@@ -407,6 +412,7 @@
     <script src="bower/jquery/dist/jquery.js"></script>
     <script src="bower/fullpage.js/dist/jquery.fullpage.js"></script>
     <script src="bower/bxslider-4/dist/jquery.bxslider.js"></script>
+    <script src="bower/jquery.maskedinput/dist/jquery.maskedinput.js"></script>
     <!-- endbower -->
     <!-- endbuild -->
     <script src="js/js.min.js"></script>
