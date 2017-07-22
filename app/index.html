@@ -8,7 +8,7 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Обо мне</title>
-	<meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 <!-- 	<meta name="viewport" content="width=960" -->
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<!-- build:css css/vendor.min.css -->
@@ -19,7 +19,7 @@
     <!-- endbower -->
     <!-- endbuild -->
 	<link rel="stylesheet" href="css/styles.min.css">
-<!-- 	<script src="js/modernizr.min.js"></script> -->
+	<script src="js/modernizr.min.js"></script>
 </head>
 <body>
 	<div class="section section1">
@@ -130,7 +130,7 @@
 									<div class="bxslider-slide1-left-ingredient-top-icon">
 										<div class="bxslider-slide1-left-ingredient-top-icon-list">
 											<table>
-												<tr><img src="assets/img/bxslider/bxslider-slide1/flour.png" alt=""><td></td><td>мука пшеничная</td><td>200 г.</td></tr>
+												<tr><td><img src="assets/img/bxslider/bxslider-slide1/flour.png" alt="flour"></td><td>мука пшеничная</td><td>200 г.</td></tr>
 												<tr><td></td><td>яйцо продукты</td><td>3 шт.</td></tr>
 												<tr><td></td><td>сахарный песок</td><td>20 г.</td></tr>
 												<tr><td></td><td>массло сливочное</td><td>50 г</td></tr>
@@ -354,11 +354,11 @@
 									в 2005, когда попал к Фабрицио Фатуччи (ресторан Sculptors) и стал его правой рукой. Нередко они вместе лично обслуживали Президента России Дмитрия Медведева на открытых 
 									и закрытых мероприятия.
 
+								</p>
 								<p>
 									<span>
 										Тони неоднократно посещал Италию, где изучил местную гастрономию и набрался опыта.
 									</span>
-								</p>
 								</p>
 							</div>
 						</li>
@@ -394,11 +394,12 @@
 								</div>
 							</div>
 							<div class="contact-form-right">	
-								<form action="contact-form" class="contact-form-date" method="post">
-									<input class="user-name" type="text" name="name" placeholder="Введите ваше Имя">
-									<input class="user-mail" type="text" name="mail" placeholder="Введите ваш Email">
-									<input class="user-phone" type="text" id="phone" name="phone" placeholder="8(___)___-__-__">
+								<form action="" class="contact-form-date" method="post" name="contact-form">
+									<input class="user-name" type="text" name="user-name" placeholder="Введите ваше Имя" required>
+									<input class="user-mail" type="text" name="email" placeholder="Введите ваш Email" required>
+									<input class="user-phone" type="text" id="phone" name="phone" placeholder="8(___)___-__-__" required>
 									<label class="callback-checkbox"><input class="callback" type="checkbox" name="callback">Заказать обратный звонок</label>
+									<button class="contact-form-submit" type="submit"></button>
 								</form>
 							</div>
 						</div>
@@ -406,6 +407,10 @@
 				</div>
 			</div>
 		</div>	
+	</div>
+	<div class="section">
+		<div class="wrapper section5">
+		</div>
 	</div>
     <!-- build:js js/scripts.min.js -->
     <!-- bower:js -->

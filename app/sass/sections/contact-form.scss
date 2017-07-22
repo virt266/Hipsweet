@@ -5,15 +5,16 @@
 .contact-form{
 	width: 843px;
 	background: url('/assets/img/form/form-background.jpg');
-	@include border-radius(15px);	
+	@include border-radius(20px);	
 	margin-bottom: 120px;
 	margin-left: 120px;
 	@extend %clearfix;
+	position: relative;
 }
 .contact-form-left{
 	width: 433px;
 	float: left;
-	padding: 110px 0 54px 0;
+	padding: 110px 0 50px 0;
 }	
 .contact-form-left-text p{
 	@include malina;
@@ -25,8 +26,9 @@
 .contact-form-right{
 	width: 410px;
 	float: right;
-	background: rgba(#474a74, .87);
+	background: rgba(#282020, .87);
 	min-height: 100%;
+	border-radius: 0 20px 20px 0;
 }	
 .contact-form-date{
 	padding: 63px 85px 63px 45px;
@@ -47,6 +49,17 @@
     border: 0;
     border-bottom: 2px solid $white;
 }
+.contact-form-date input[type=checkbox]{
+    background: none;
+    outline: none;
+    border: 0;
+	margin-right: 15px;
+}
+checkbox:checked{
+	.callback-checkbox {
+		font-weight: 700;	
+	}	
+}
 .callback-checkbox{
 	font-family: arial, verdana, sans-serif;
 	font-weight: normal;
@@ -56,4 +69,38 @@
     display: block;
     text-align: left;
     margin-top: 22px;
+}
+.contact-form-submit{
+	width: 96px;
+	height: 96px;
+	@include border-radius(50%);
+	font-size: 0;
+    position: absolute;
+    top: 100%;
+    left: 100%;
+    margin-left: -48px;
+    margin-top: -48px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    background: #fca211;
+
+    &:before{
+    	font-family: "FontAwesome";
+    	content: "\f061";
+    	color: #9e5225;
+    	font-size: 60px;
+    	position: absolute;
+    	top: 50%;
+    	left: 50%;
+    	transform: translate(-50%, -50%);
+
+    }
+
+    &:hover{
+        background: rgba(#fca211, .9);
+    }
+    &:hover:before{
+        color: rgba(#9e5225, .9);
+    }
 }

@@ -36,8 +36,8 @@ gulp.task('build', ['html', 'styles', 'scripts', 'assets']);
 gulp.task('watch', function() {
 	gulp.watch('app/sass/**/*.scss', ['styles']); //стили
     gulp.watch('app/js/**/*.js', ['scripts']); //скрипты
-    gulp.watch(['./bower.json', 'app/index.html'], ['html']); // html
-    gulp.watch('./app/assets/**/*.*', ['assets']); //наши локальные файлы(картинки, шрифты)
+    gulp.watch(['bower.json', 'app/index.html'], ['html']); // html
+    gulp.watch('app/assets/**/*.*', ['assets']); //наши локальные файлы(картинки, шрифты)
     gulp.watch('app/**/*.*').on('change', browserSync.reload); //Перезапуск browserSynс
 });
 // Задача 'styles' выполняет сборку наших стилей.
@@ -97,12 +97,12 @@ gulp.task('scripts', function() {
 gulp.task('browser-sync', function() {
 	return browserSync.init({
 		server: {
-			baseDir: './dist/'
+			baseDir: 'dist/'
 		}
 	});
 });
 //Перемешение наших локальных файлов в папку build
 gulp.task('assets', function() {
-	return gulp.src('./app/assets/**/*.*')
-		.pipe(gulp.dest('./dist/assets'));
+	return gulp.src('app/assets/**/*.*')
+		.pipe(gulp.dest('dist/assets'));
 });
