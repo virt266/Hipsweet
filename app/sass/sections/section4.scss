@@ -2,7 +2,7 @@
 	padding: 83px 0 0 0;
 	background-color: #ececec;
 }
-.tabs-command-list{
+.tabs-list{
 	@extend %clearfix;
 	padding-bottom: 38px;
 }
@@ -13,8 +13,9 @@
 	width: 385px;
 	float: left;
 }
-.tabs-command-item{
+.tabs-link{
 	display: block;
+	text-decoration: none;
 	width: 230px;
 	padding: 13px 20px;
 	margin-left: 12px;
@@ -26,7 +27,7 @@
 		margin-left: 0;
 	}
 }
-.tabs-command-item-active{
+.tabs-item-active{
 		background: #893213;
 
 		&:before{
@@ -40,35 +41,42 @@
 		margin-left: -5px;
 		transform: rotate(-45deg);
 	}
-			.command-item-name{
+			.command-tabs-name{
 				color: #ffa92b;
 			}
-			.command-item-position{
+			.command-tabs-position{
 				color: #fff;
 			}
 			
 }
-.command-item-name{
+.command-tabs-name{
 	@include malina;
     color: #2b2f60;
     font-size: 30px;
 }
 
-.command-item-position{
+.command-tabs-position{
 	font-family: arial, verdana, sans-serif;
 	font-weight: normal;
     color: #8d8d8d;
     font-size: 16px;
     line-height: 30px;
 }
-.tabs-command-content{
+.tabs-content{
 	@extend %clearfix;
 }
-.tabs-command-content-left{
+.tabs-content-left{
 	float: left;
 	width: 270px;
+	min-height: 400px;
 	margin-right: 30px;
 	margin-top: 37px;
+}
+.content-left{
+	display: none;
+}
+.content-left-active{
+	display: block;
 }
 .content-left p{	
 	font-family: arial, verdana, sans-serif;
@@ -85,21 +93,28 @@
     line-height: 21px;
     font-weight: bold;	
 }
-.tabs-command-content-center{
+.tabs-content-center{
 	float: left;
 }
 .content-center-img{
-	height: 600px;
+	min-height: 600px;
 	width: 415px;
 }
 .content-center-img-pic{
 	display: block;
 	max-width: 100%;
 }
-.tabs-command-content-right{
+.tabs-content-right{
 	float: right;
 	width: 340px;
+	min-height: 400px;
 	margin-top: 37px;	
+}
+.content-right{
+	display: none;
+}	
+.content-right-active{
+	display: block;
 }
 .content-right p{	
 	font-family: arial, verdana, sans-serif;
