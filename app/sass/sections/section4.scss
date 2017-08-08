@@ -35,7 +35,7 @@
 		margin-left: 0;
 	}
 }
-.tabs-item-active{
+.active{
 		.tabs-link{
 			background: #893213;
 			@include border-radius(20px);
@@ -123,7 +123,7 @@
 .tabs-content-item{
 	display: none;
 }
-.content-active{
+.active{
 	display: block;
 }
 .red{

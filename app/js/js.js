@@ -1,6 +1,11 @@
 $(document).ready(function(){
 	$('.bxslider').bxSlider();
-	$('.tabs-link').on('click', function(e){
+	jQuery(function($){
+	   $("#phone").mask("+8(999) 999-9999");
+	});
+//tabs
+	(function(){
+		$('.tabs-link').on('click', function(e){
 		e.preventDefault();
 
 		var
@@ -10,21 +15,28 @@ $(document).ready(function(){
 			content = container.find('.tabs-content-item'),
 			ndx = item.index(),
 			reqItem = content.eq(ndx),
-			activeItem = content.filter('.tabs-item-active');
+			activeItem = content.filter('.active');
 
-			item.addClass('tabs-item-active')
+			item.addClass('active')
 				.siblings()
-				.removeClass('tabs-item-active');
+				.removeClass('active');
 
 			content.eq(ndx)
-				.addClass('content-active')
+				.addClass('active')
 				.siblings()
-				.removeClass('content-active');
+				.removeClass('active');
 
+				activeItem.fadeOut(300, function(){
+					reqItem.fadeIm(300, function(){
+						$(this).addClass('active')
+							.siblings()
+							.removeClass('active');
+					});
+				});
+		});
+	}());
+
+	(function(){
 
 	});
-});
-
-jQuery(function($){
-   $("#phone").mask("+8(999) 999-9999");
 });
