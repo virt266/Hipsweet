@@ -1,10 +1,9 @@
 .section7{
-	min-height: 758px;
 	background: $white;
 }
 footer{
 	@extend %clearfix;
-	margin-top: 25px;
+	margin-top: 22px;
 }
 .footer-left{
 	width: 230px;
@@ -19,26 +18,33 @@ footer{
     color: $greey;
     font-size: 14px;
     float: left;
-    width: 285px;
+    width: 290px;
     text-align: center;
+    margin-top: 20px;
 }
 .social-list{
-	width: 300px;
+	width: 250px;
 	float: right;
+	text-align: center;
 }
 .social-list-item{
-	background: #000;
 	@include inlineblock(top);
 }
 .social-item-link{
 	display: block;
-	width: 50px;
-	height: 50px;
+	width: 46px;
+	height: 46px;
 	font-size: 0;
 	text-decoration: none;
+
+	&:hover{
+		opacity: .6;
+	}
 }
-.fb{
+.fa-facebook, .fa-instagram, .fa-odnoklassniki, .fa-twitter, .fa-vk{
 	font-family: FontAwesome;
 	content: "\f09a";
+	font-size: 27px;
 	color: $greey; 
+	margin-top: 11px;
 }
