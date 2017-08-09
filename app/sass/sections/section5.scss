@@ -1,5 +1,58 @@
 .section5{
-	padding: 83px 0 0 0;
-	background-color: #ececec;
-	height: 1100px;
+	min-height: 758px;
+	background: #cf3438 url('../assets/img/section5/section5_bg.jpg') no-repeat;
+}
+
+.section5-title{
+	@include malina;
+	color: $white;
+	font-size: 40px;
+	margin-top: 85px;
+	margin-bottom: 60px;
+	text-align: center;
+}
+.acardeon{
+	padding: 0 150px 0 60px;
+}
+ol {
+    list-style-type: upper-alpha; /* Заглавные буквы */
+   }
+.acco-item{
+	margin-bottom: 40px;
+}
+.acco-trigger{
+	font-family: arial;
+	color: $white;
+	font-size: 22px;
+	padding-bottom: 5px;
+	text-decoration: none;
+	border-bottom: 2px dashed $white;
+
+	&:hover{
+		color: #ffb100;
+		border-bottom: none;
+	}
+
+	&:active{
+		color: #ffb100;
+		border-bottom: none;
+	}
+}
+.acco-content{
+	margin-top: 15px;
+	margin-left: 44px;
+	display: none;
+}
+.acco-content p{
+	font-family: arial;
+	color: $white;
+	font-size: 15px;
+	line-height: 21px;
+}
+.active{
+	display: block;
+	.acco-trigger{
+		color: #ffb100;
+		border-bottom: none;
+	}
 }

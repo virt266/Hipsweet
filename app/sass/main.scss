@@ -3,6 +3,7 @@ $white: #fff;
 $black: #000;
 $red: #AC1B22;
 $lightgrey:#747474;
+$greey: #8d8d8d;
 $body-font : 'als_malinaregular', Helvetica, serif;
 
 // layout
@@ -21,6 +22,8 @@ $body-font : 'als_malinaregular', Helvetica, serif;
 @import "sections/section3";
 @import "sections/section4";
 @import "sections/section5";
+@import "sections/section6";
+@import "sections/section7";
 @import "sections/myMenu";
 @import "sections/contact-form";
 

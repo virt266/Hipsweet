@@ -16,6 +16,7 @@ $(document).ready(function(){
 			ndx = item.index(),
 			reqItem = content.eq(ndx),
 			activeItem = content.filter('.active');
+			duration = 300;
 
 			item.addClass('active')
 				.siblings()
@@ -26,8 +27,8 @@ $(document).ready(function(){
 				.siblings()
 				.removeClass('active');
 
-				activeItem.fadeOut(300, function(){
-					reqItem.fadeIm(300, function(){
+				activeItem.fadeOut(duration, function(){
+					reqItem.fadeIn(duration, function(){
 						$(this).addClass('active')
 							.siblings()
 							.removeClass('active');
@@ -38,5 +39,39 @@ $(document).ready(function(){
 
 	(function(){
 
-	});
+		var flag = true;
+
+		$('.acco-trigger').on('click', function(e){
+			e.preventDefault();
+
+			var
+				$this = $(this),
+				container = $this.closest('.acco'),
+				item = $this.closest('.acco-item'),
+				correntContent = item.find('.acco-content'),
+				duration = 300;
+
+			if (flag){
+				flag = false;
+				if (!item.hasClass('active')){
+				item
+					.addClass('active')
+					.siblings()
+					.removeClass('active')
+					.find('.acco-content')
+					.slideUp(duration);
+
+				correntContent.slideDown(duration, function(){
+					flag = true
+				});
+
+			} else {
+				
+				item.removeClass('active');
+				correntContent.slideUp();
+					flag = true;
+			}
+			}
+		});
+	}());
 });
